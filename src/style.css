@@ -1,0 +1,259 @@
+*{margin:0;padding: 0;box-sizing: border-box;font-family: 'Libre Baskerville', serif;}
+html{font-size: 62.5%;}
+
+/* utility class ++++++++++++++++  */
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Roboto+Serif&family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Libre+Baskerville:wght@400;700&display=swap');
+.h1{
+    font-size: 6rem;
+    font-family: 'Source Code Pro', monospace;
+}
+.p{
+    font-size: 2.5rem;
+    font-family: 'Redressed', cursive;
+}
+
+/* +++++++++++++++++++++++++++ navbar section styling +++++++++++++++++++++++++ */
+#navbar_content{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(241, 240, 237);
+    width: 100vw;  
+    height: 10vh; 
+}
+.logo_style{
+    height: 7rem;
+    width: 9rem;
+    margin-right: 20rem;
+}
+.logo_style img{
+    height: 6rem;
+    width: 7rem;
+}
+ol{
+    display: inline-flex;
+    font-size: 1.5rem;
+}
+ol li{
+    list-style: none;
+    padding: 1.3rem 1.5rem;
+}
+
+/* +++++++++++++++++++++++++++ banner section styling +++++++++++++++++++++++++ */
+#banner-section{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #000;
+    z-index: -4;
+}
+
+#banner-section::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../public/images/1.png');
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: .8;
+}
+
+.banner-content{
+    height: 50rem;
+    width: 80rem;
+    display: inline-block;
+    transform: translate(25rem, 21rem);
+}
+button{
+    margin-top: 4rem;
+    cursor: pointer;
+    padding: 2rem 4rem;
+    background: none;
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    cursor: pointer;
+}
+
+/* +++++++++++++++++++++++++++ Primary section styling +++++++++++++++++++++++++ */
+#primary_content{
+    display: flex;
+    margin: 10rem 6rem;
+}
+.card_component{
+    padding: 9rem;
+}
+.img-content{
+    margin: 2.2rem 5rem;
+    padding: 2.2rem 5rem;
+    position: relative;
+    z-index: -4;
+}
+.img-content::before{
+    content: "";
+    position: absolute;
+    top: 24rem;
+    left: 1rem;
+    height: 45rem;
+    width: 40rem;
+    background-color: #95a39a;
+    z-index: -2;
+}
+.img-content::after{
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: 23rem;
+    height: 45rem;
+    width: 40rem;
+    background-color: rgb(210, 226, 219);
+    z-index: -2;
+}
+
+/* ++++++++++++++++++++++++++    ternary section for styling     +++++++++++++++++++=++++++++ */
+#ternary-section{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 105vh;
+    background-color: rgb(210, 226, 219);
+}
+.img-container{height:  70vh;width: 30vw;position: relative;
+    z-index: 1;
+    margin-left: 10rem;
+}
+
+.img-container img{
+    height: 100%;width: 100%;
+}
+.img-container::before{
+    content: "";
+    position: absolute;
+    background-color: #95a39a;
+    height: 30vh;
+    width: 35vw;
+    top: 35rem;
+    left: 16rem;
+    z-index: -4;
+}
+.card-contant{
+    border: .4rem solid;
+    height: 50rem;
+    width: 43rem;
+    position: relative;
+    right: 20rem;
+    background-color: rgb(50, 168, 82);
+    z-index: 5;
+    box-shadow: 0rem .5rem .5rem .1rem black;
+}
+.card-contant::before{
+    position: absolute;
+    content: "";
+    height: 23rem;
+    width: 23rem;
+    left: 35rem;
+    top: -10rem;
+    background-color: rgb(210, 226, 219);
+    box-shadow: 0 0 .3rem .2rem black, 0 0 .3rem .8rem rgb(50, 168, 82);
+    border-radius: 15rem;
+    z-index: 4;
+}
+.center-div{
+    height: 35rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+.center-div p{line-height: 1.5;}
+
+/* ++++++++++++++++++++++++++    quadratic section styling     +++++++++++++++++++=++++++++ */
+#quadratic-section{
+    height: 100vh;
+    width: 90vw;
+    margin: auto;
+    background-image: url('../public/images/5.jpg');
+    background-size: 100% 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+#quadratic-section h1{
+    font-size: 3.5rem;
+    float: right;
+    width: 65rem;
+    margin-top: 2rem;
+}
+#items-content{
+    width: 23rem;
+    display: inline-block;
+    height: 33rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #fff;
+    display:flex;
+    justify-content:space-around;
+    flex-direction: column;
+    align-items:center;
+}
+.item-store{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0 17rem;
+}
+/* ++++++++++++++++++++++++++    media queriess for responsive     +++++++++++++++++++=++++++++ */
+@media (max-width:768px){
+    .img-content img{height: 80rem;}
+}
+@media (max-width:821px){
+    html{font-size: 45%;}
+    #banner-section,#banner-section::before{height: 55vh;}
+    svg{display: none;}
+    #primary_content{
+        flex-direction: column;
+        text-align: center;
+    } 
+    .img-content::before{
+        top: 43rem;
+        left: 5rem;
+        height: 50rem;
+    }
+    .img-content::after{
+        top: -3rem;
+        left: 50rem;
+        height: 55rem;
+    }
+    .para p{font-size: 5.5rem;}
+    .heading h1{font-size:8.5rem}
+}
+@media (max-width:415px){
+    html{font-size: 37%;}
+    #banner-section,#banner-section::before{height: 55vh;}
+    svg{display: none;}
+    .banner-content{
+        transform: translate(0rem, 15rem);
+        width: 70rem;
+        text-align: center;
+    }
+    #primary_content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .card_component{padding: 2rem;}
+    .img-content{height: 45vh;margin: 1.2rem -2rem; margin-top: 5rem;}
+    .img-content::before{
+        top: 8rem;
+        left: 8rem;
+    }
+    .img-content::after{
+        left: 15rem;
+    }
+    .img-content img{height: 40vh;}
+}
+@media (max-width:376px){
+    html{font-size: 33%;}
+}
